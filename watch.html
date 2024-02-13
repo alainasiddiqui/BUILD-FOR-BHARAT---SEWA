@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="watch.css" />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="img">
+        <img src="f3.jpg" alt="" onclick="clk(this)" /> <br />
+        <img src="f1.jpg" alt="" onclick="clk(this)" /> <br />
+        <img src="f2.jpg" alt="" onclick="clk(this)" /> <br />
+        <a
+          href="https://app.vectary.com/p/5jVOCjMLpKUTiHjloOV3XF"
+          target="_parent"
+        >
+          <img src="f3.jpg" alt="" onclick="clk(this)"
+        /></a>
+        <br />
+      </div>
+      <div class="left">
+        <img src="f3.jpg" id="imgs" alt="" />
+        <p>
+          <button>Add To Cart</button>
+          <button>Buy Now</button>
+        </p>
+      </div>
+
+      <div class="right">
+        <h3>Visit the TIMEWEAR Store</h3>
+        <h1>TIMEWEAR Black Men's Watch</h1>
+        <h1>₹400</h1>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>Brand : Visit the TIMEWEAR Store</h3>
+        <div class="size">
+          <label for="Size">Size</label>
+          <select id="Size">
+            <option value="small">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XXL">XXL</option>
+            <option value="XXXL">XXXL</option>
+          </select>
+        </div>
+        <br />
+
+        <hr />
+        <br />
+        <pre>
+<b>Product details</b>
+<b>Case diameter</b>         Millimetres
+<b>Band colour</b>             Black
+<b>Band material</b>           Leather
+<b>Warranty type</b>           Manufacturer
+<b>Watch movement</b>     Quartz
+<b>Case thickness</b>        Millimetres
+<b>Country of Origin</b>    And Barbuda
+
+         </pre>
+        <h4>Available Offer's</h4>
+        <p>
+          : Special PriceGet extra 11% off (price inclusive of cashback/coupon)
+        </p>
+        <p>
+          : Partner OfferPurchase now & get a surprise cashback coupon for
+          January / February 2023
+        </p>
+        <p>
+          : Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift
+          Card worth up to ₹1000*
+        </p>
+        <p>: Bank Offer5% Cashback on Flipkart Axis Bank</p>
+
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <script>
+      function clk(newImg) {
+        let getImg = document.getElementById("imgs");
+        getImg.src = newImg.src;
+      }
+    </script>
+  </body>
+</html>

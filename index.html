@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .nav-item {
+    font-family: serif;
+    font-weight: 300;
+    padding-inline: 60px;
+    font-size: medium;
+    border-color: aqua;
+    background-color: #f5f9ee;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(238, 242, 226, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(238, 242, 226, 0);
+  }
+
+  .dropdown-item {
+    font-family: serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    color: #f8da5b;
+    background: #FFFFFF
+  }
+
+  .d-flex {
+    font-family: serif;
+    font-weight: 300;
+    padding-inline: 60px;
+    font-size: medium;
+    border-color: aqua;
+    background-color: #f5f9ee;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(238, 242, 226, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(238, 242, 226, 0);
+  }
+
+  .container-fluid {
+    background-color: #f5f9ee
+  }
+
+  .container {
+    background-color: #f5f9ee;
+  }
+
+  .carousel-inner {
+    font-family: serif;
+    font-weight: bolder;
+    font-size: large;
+    color: #FFFFFF;
+    background: #ece9e9;
+    text-shadow: 3px 5px 2px #474747;
+    color: #FFFFFF;
+    background: #ece9e9;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+  }
+
+  .round-image {
+    width: 250px;
+    /* Adjust the width as needed */
+    height: 250px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 40px;
+
+  }
+
+  .roundtext {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+
+
+  }
+
+  .image-title {
+    font-family: serif;
+    /* Change the font as needed */
+    font-size: 30px;
+    /* Change the font size as needed */
+    font-weight: bold;
+
+
+    /* webkit-box-shadow: inset -1px 3px 8px 5px #cbd8e8, 2px 5px 16px 0px #cadaec, 5px 5px 15px 5px rgba(225,229,213,0);  */
+    box-shadow: inset -1px 3px 8px 5px #dbec97, 2px 5px 16px 0px #b7bfc8, 5px 5px 15px 5px rgba(225, 229, 213, 0);
+    background: #e7e8e9;
+
+
+    /* body#tinymce {
+      background: #FFFFFF
+    } */
+
+    text-align: center;
+    justify-content: space-between;
+  }
+</style>
+</head>
+
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="SEWA LOGO.png" alt="Bootstrap" width="100" height="80">
+          </a>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="km_20240209_1080p_60f_20240210_162635 (1).mp4">VR MALL</a>
+          </li>
+          <li class="nav-item DROPDOWN">
+            <a class="nav-link" href="bot.html">
+              CHAT
+            </a>
+
+        </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link href=" ht.html">LOGIN/SIGNUP</a>
+        </li>
+        <form class="d-flex" class="nav-item" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        </ul>
+        <div id="google_element">
+          <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+          <script>
+            function loadGoogleTranslate() {
+              new google.translate.TranslateElement("google_element")
+            }
+          </script>
+        </div>
+
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- carausal -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pexels-rachel-claire-5531746.jpg" width="300" height="450" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>NAMASTE</h5>
+          <p>SEWA WELCOMES YOU </p>
+        </div>
+
+
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-photo-3858268.jpeg" width="300" height="450" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" class="carousel-inner">
+          <h5>SALE UPTO 70%</h5>
+          <p>CHECKOUT OUR DEALS</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pexels-daniel-trylski-10874087.jpg" width="300" height="450" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="image-container">
+    <div>
+      <img src="pexels-sid-maia-3489129.jpg" alt="Image 1" title="WOMEN" class="round-image">
+      <p class="image-title">WOMEN</p>
+    </div>
+    <div>
+      <a href="hoodie.html"><img src="pexels-photo-298863.jpeg" alt="Image 2" title="MEN" class="round-image"></a>
+      <p class="image-title">MENS</p>
+    </div>
+    <div>
+      <img src="pexels-pixabay-325876.jpg" alt="Image 3" title="FORMALS" class="round-image">
+      <p class="image-title">MENS FORMAL</p>
+    </div>
+    <div>
+      <img src="pexels-valeria-boltneva-965990.jpg" alt="Image 1" title="PERFUMES" class="round-image">
+      <p class="image-title">PERFUMES</p>
+    </div>
+    <div>
+      <a href="watch.html"><img src="pexels-mister-mister-380782.jpg" alt="Image 2" title="WATCHES"
+          class="round-image"></a>
+      <p class="image-title">WATCHES</p>
+    </div>
+    <div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
